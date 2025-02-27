@@ -684,13 +684,12 @@ li {
     margin-bottom: 0;
   }
 
-  .searchbar{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    width: 100%;
-    padding: 40px;
-    background-color: #f4f4f4;
+  .searchbar {
+    display: flex;             /* Enables flexbox layout */
+    align-items: center;       /* Vertically aligns the items in the center */
+    justify-content: space-between; /* Distributes space evenly between the items */
+    gap: 20px;                 /* Adds space between the image container and text */
+    padding: 20px;             /* Optional: Adds padding around the container */
     p {
         font-size: 28px; /* Standard font size for paragraphs */
         font-family:"Nunito Sans", serif ;
@@ -700,43 +699,40 @@ li {
         font-size: 30px; /* Larger font size for the heading */
         margin-bottom: 15px; /* Adds space below the heading */
         font-family: "Roboto", sans-serif ;
-    }           
-  }
-  
-  #searchbars-img {
-    display: grid;
+    }  
+     
+}
+
+#searchbars-img {
+    flex-direction: column;             /* Enables flexbox for the images */
+    gap: 10px;                 /* Adds space between the images */
+    max-width: 250px;
     margin: auto;
-    width: 20px; /* Adjust the size of the icons container */
-  }
-  
-  #searchbars-img img {
-    width: 350px; /* Controls the icon size */
-    height: auto;
-    object-fit: contain;
+    padding: 12px;
+
+}
+
+#searchbars-img img {
+    
+    width: 230px;               /* Adjust the size of the images */
+    height: auto;              /* Keeps the aspect ratio of the images */
    
-  }
-  
-  
-  .text-containe {
-    max-width:1200px; /* Adjusts the text container width */
-    width: 1000px;
-   height: auto;
-   margin: auto;
-  }
-  
-  .text-containe h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    h3{
-        font-family: "Roboto", sans-serif;
-    }
-  }
-  
-  .text-containe p {
-    font-size: 28px;
-    line-height: 1.6;
-    margin-bottom: 0;
-  }
+}
+
+.text-container4 {
+    max-width: 1200px;          /* Restrict the width of the text container */
+    width: 970px;
+
+}
+
+.text-container4 h3 {
+    margin: 0 0 10px 0;        /* Adds spacing below the heading */
+}
+
+.text-container4 p {
+    margin: 0;                 /* Removes default margin from the paragraph */
+    line-height: 1.6;          /* Improves readability of the text */
+}
 
 /* VIDEO CODE  */
 
@@ -756,14 +752,13 @@ li {
   
   /* Style for the media (image or video) */
   .media {
-    width: 300px; /* Adjust this value to control size */
-    height: auto;
-    margin: auto;
+    max-width: 350px; /* Adjust this value to control size */
+    
     
     
   }
   .media video{
-    width: 350px; /* Adjust this value to control size */
+    width: 300px; /* Adjust this value to control size */
     height: auto;
     margin: auto;
     
@@ -773,15 +768,13 @@ li {
   /* Style for the text section */
   .text {
    
-    width: 1000px;
+    max-width: 1200px;
+    width: 900px;
     height: auto;
 
   }
 
-  .video{
-    width: 800px;
 
-  }
   
   .text h2 {
     /* margin-bottom: 20px; */
@@ -1045,10 +1038,17 @@ li {
         font-size: 18px;
         
     }
+    .container2 h3{
+        font-size: 18px;
+        
+    }
     .container{
         max-width: 390px;
     }
     .container p{
+        font-size: 18px;
+    }
+    .container h3{
         font-size: 18px;
     }
     .side-by-side5 {
@@ -1068,10 +1068,19 @@ li {
     
 
     .searchbar {
-        display: grid;
+        flex-direction: column;
         max-width: 390px;
+        p{
+            font-size: 18px;
+        }
+        h3{
+            font-size: 20px;
+        }
 
 
+    }
+    #icons img{
+        width: 3/0px;
     }
 
     
@@ -1083,17 +1092,17 @@ li {
         
       }
       #searchbars-img{
-        max-width: 400px;
-        width: 200px;
+        max-width: 390px;
+        width: 250px;
        
       }
-      .text-containe{
+      .text-container4{
         max-width: 390px;
         width: 300px;
-        padding-top: 10px;
+        padding-top: 5px;
       }
       #searchbars-img img{
-        max-width: 250px;
+        max-width: 200px;
       }
       
       
