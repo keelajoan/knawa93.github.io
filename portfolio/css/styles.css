@@ -1,0 +1,1163 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+   
+    
+}
+body {
+    
+    margin: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: #f4f4f4; */
+    
+    
+
+}
+/* header */
+nav{
+    padding: 20px;
+    background-color: #F5F5F5;
+   
+    
+}
+nav ul{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+    list-style: none;
+    
+}
+nav a{
+    height: 100%;
+    padding:0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family:"Roboto", sans-serif; ;
+}
+
+nav a:hover{
+    color:  #FF69B4;
+    border-radius: 3px;
+    padding: 32px;
+    transition:
+        background-color 0.5s,
+        box-shadow 0.7s,
+        transform 0.5s;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+
+
+nav #logo img {
+    width: 90px;
+    padding: 10px;
+}
+
+nav a#logo:hover {
+    background-color: transparent;  
+    box-shadow: none;              
+   
+}
+ 
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: transparent;
+    backdrop-filter:blur(10px);
+    box-shadow: -10px 0 10px rgb(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+    padding-top: 12;
+    margin: 20px;
+}
+.sidebar a{
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+
+
+
+/* THIS STARTS THE HOME PAGE */
+
+    
+    #maintitle {
+            margin:auto ;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            justify-content: center;
+            background-color:#f4f4f4;
+            b{ 
+                color: #FF69B4 ;
+
+            }
+
+            h1{
+            font-size: 70px;
+            font-family: "Roboto", sans-serif;
+            color:black;
+            font-weight: 300;
+            
+        }
+        p{
+            font-family:"Nunito Sans", serif ;
+            font-size: 65px;
+            color: black;
+        }
+
+            
+            
+         }
+         #intro{
+            width: 1430px;
+            padding: 20px;
+         }
+
+         
+
+
+           
+    
+/* THIS LINE STARTS THE CARD CODE */
+
+#projects {
+    text-align: center;
+    color:#f4f4f4;
+    /* background-color: #000000; */
+    align-items: center;
+    background-color:#FF69B4;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 20px 30px;
+    margin: 56px;
+     border-radius: 15px;
+    
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    width: 500px;
+    height: 600px;
+    border: solid #FF69B4 4px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* To ensure the image fits properly */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #9f9e9e;
+    margin: 10px 0;
+}
+
+.card a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    color: #FF69B4;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.card a:hover {
+    color: #333;
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.card p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+
+
+/* THIS LINE STARTS THE  APP CODE*/
+
+#section-container {
+    width: 100%;  /* Make sure it stretches the entire width */
+    padding: 0;
+    h1{
+        font-size: 48px;
+        font-weight: bold;
+        font-family:"Roboto", sans-serif ;
+        line-height: 1.3;
+        margin-bottom: 20px; /* Space below the heading */
+    }
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
+    }
+    h3 {
+        font-size: 30px; /* Larger font size for the heading */
+        margin-bottom: 15px; /* Adds space below the heading */
+        font-family: "Roboto", sans-serif ;
+    }           
+}
+
+
+#main-content {
+    margin: auto;
+    max-width: 1200px; /* Keeps the content centered and inside this width */
+    align-items: center;
+    justify-content: center;
+    padding: 32.80px;
+    h3{
+        font-family:"Roboto", sans-serif ;
+    }
+    p{
+        font-size: 26px;
+    }
+}
+
+/* Mockup image styling */
+#mockup1 {
+    max-width: 1025px;
+    justify-content: center;
+    align-items: center;
+}
+
+#mockup1 img {
+    width: 1025px; /* Or any other width you want the image to be */
+}
+   #maininfo {
+    p{
+        font-size: 26px;
+        font-family: "Nunito Sans", serif;
+    }
+    h1{
+        font-size: 100px;
+        font-weight: 700;
+        font-family:"Roboto", sans-serif ;
+        color: #3C3744;
+        
+
+    b{
+        font-size: 30px;
+        text-wrap: wrap;
+        font-family:"Nunito Sans", serif ;
+        
+    }
+    
+
+    
+    b{
+        color: black;
+        font-size: 26px;
+        font-family: "Nunito Sans", serif;
+    }
+    
+    
+   
+}
+   }
+
+/*side by side code 1 */
+#main {
+    padding: 30px;
+    
+    p {
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-family:"Nunito Sans", serif ;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family:"Roboto", sans-serif ;
+    }
+    
+    
+}
+
+.single {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container {
+    flex: 1 1 60%;  /* Takes up 60% of the space */
+    padding: 50px;
+    
+}
+
+
+ul {
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-family:"Nunito Sans", serif  ;
+    font-size: 28px;
+}
+
+.sideside {
+    flex: 1 1 35%;  /* Takes up 35% of the space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Aligns items horizontally */
+    gap: 20px;  /* Adds space between images */
+}
+
+.main2{
+    padding: 30px;
+    p {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-family:"Nunito Sans", serif ;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family:"Roboto", sans-serif ;
+    }
+    
+    
+}
+
+.single {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container {
+    flex: 1 1 60%;  /* Takes up 60% of the space */
+    padding: 20px;
+    
+}
+
+
+.sideside {
+    flex: 1 1 35%;  /* Takes up 35% of the space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Aligns items horizontally */
+}
+
+
+.image-container img {
+    width: 48%;  /* Makes the images take up 48% of the space */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* main colors code */
+.main2 {
+    padding: 30px;
+    
+    p {
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-family:"Nunito Sans", serif ;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family:"Roboto", sans-serif ;
+    }
+    
+    
+}
+
+.single2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container2{
+    flex: 1 1 60%;  /* Takes up 60% of the space */
+    padding: 50px;
+    
+}
+
+
+
+.sideside2 {
+    flex: 1 1 35%;  /* Takes up 35% of the space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Aligns items horizontally */
+    gap: 20px;  /* Adds space between images */
+}
+
+.main2{
+    padding: 30px;
+    p {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-family:"Nunito Sans", serif ;
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-family:"Roboto", sans-serif ;
+    }
+    
+    
+}
+
+.single2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container2 {
+    flex: 1 1 60%;  /* Takes up 60% of the space */
+    padding: 50px;
+    
+}
+
+
+.sideside2 {
+    flex: 1 1 38%;  /* Takes up 35% of the space */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Aligns items horizontally */
+}
+.image-container2{
+    width:200px;
+}
+
+
+.image-container2 img {
+    width: 48%;  /* Makes the images take up 48% of the space */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+/* main colors code */
+
+/* DESIGN PROCESS CODE  */
+
+.design-process-container {
+    max-width:1200px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px; /* Adds space around the content */
+    background-color: white; /* Optionally, set a background color */
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
+    }
+    h3 {
+        font-size: 30px; /* Larger font size for the heading */
+        margin-bottom: 15px; /* Adds space below the heading */
+        font-family: "Roboto", sans-serif ;
+    }           
+}
+
+
+
+
+/* DESIGN PROCESS CODE END   */
+
+
+     
+.mockups2 {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px; 
+    
+  }
+
+  #contents {
+    padding: 10px; /* Optional: adds some padding around the content */
+    width: 100%;
+    max-width: 1200px;
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
+    }
+   
+   
+    
+  }
+
+
+  #contents img {
+    max-width: 100%; /* Ensures the images are responsive */
+    margin: 10px; /* Adds space between images */
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .mockups3 {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    max-width: 1200px;
+    margin: auto;
+    
+  }
+  
+
+  #contents2 {
+    padding: 10px; /* Optional: adds some padding around the content */
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
+    }
+  }
+
+
+  #contents2 img {
+    max-width: 100%; /* Ensures the images are responsive */
+    margin: 10px; /* Adds space between images */
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  /* ICONS CODE */
+  #icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+   
+  }
+  
+  .single-column5 {
+    width: 100%;
+    max-width: 1200px;
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
+    }
+    h3 {
+        font-size: 30px; /* Larger font size for the heading */
+        margin-bottom: 15px; /* Adds space below the heading */
+        font-family: "Roboto", sans-serif ;
+    }           
+     /* Ensures it doesn't stretch too much */
+  }
+  
+  .side-by-side5 {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap; /* Allows the content to wrap on smaller screens */
+    gap: 30px;
+  }
+  
+  /* Image container styling */
+  .image-container5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    margin: auto;
+    gap: 20px;
+    max-width: 800px; /* Adjust the size of the icons container */
+  }
+  
+  .image-container5 img {
+    width: 40px;
+    max-width: 200px; /* Ensures icons don't stretch too large */
+    height: auto;
+    gap: 20px;
+  }
+  
+  
+  
+  /* Text container styling */
+  .text-container5 {
+    flex-basis: 75%;
+    max-width: 1200px;
+    padding: 10px;
+
+  }
+  
+  .text-container5 h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .text-container5 p {
+    font-size: 28px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+  .searchbar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    width: 100%;
+    padding: 40px;
+    background-color: #f4f4f4;
+    p {
+        font-size: 28px; /* Standard font size for paragraphs */
+        font-family:"Nunito Sans", serif ;
+        margin-bottom: 28px; /* Adds space between paragraphs */
+    }
+    h3 {
+        font-size: 30px; /* Larger font size for the heading */
+        margin-bottom: 15px; /* Adds space below the heading */
+        font-family: "Roboto", sans-serif ;
+    }           
+  }
+  
+  #searchbars-img {
+    display: grid;
+    margin: auto;
+    width: 20px; /* Adjust the size of the icons container */
+  }
+  
+  #searchbars-img img {
+    width: 350px; /* Controls the icon size */
+    height: auto;
+    object-fit: contain;
+   
+  }
+  
+  
+  .text-containe {
+    max-width:1200px; /* Adjusts the text container width */
+    width: 1000px;
+   height: auto;
+   margin: auto;
+  }
+  
+  .text-containe h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    h3{
+        font-family: "Roboto", sans-serif;
+    }
+  }
+  
+  .text-containe p {
+    font-size: 28px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+/* VIDEO CODE  */
+
+  .media-text-container {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically aligns the items */
+    justify-content: space-between; /* Spreads out the media and text */
+    width:90%; /* Max width for the layout */
+    padding: 20px;
+    margin: auto;
+    h3{
+        font-family:"Roboto", sans-serif ;
+        font-size: 30px;
+    }
+    
+  }
+  
+  /* Style for the media (image or video) */
+  .media {
+    width: 300px; /* Adjust this value to control size */
+    height: auto;
+    margin: auto;
+    
+    
+  }
+  .media video{
+    width: 350px; /* Adjust this value to control size */
+    height: auto;
+    margin: auto;
+    
+    
+  }
+  
+  /* Style for the text section */
+  .text {
+   
+    width: 1000px;
+    height: auto;
+
+  }
+
+  .video{
+    width: 800px;
+
+  }
+  
+  .text h2 {
+    /* margin-bottom: 20px; */
+    font-size: 2rem;
+  }
+  
+  .text p {
+    font-size: 28px;
+    font-family:"Nunito Sans", serif ;
+  }
+  
+  
+  
+  
+  /* ICONS CODE */
+
+
+        
+
+
+    
+ 
+
+        #footer{
+            padding: 20px;
+            margin-top: 80px;
+            font-size: 30px;
+            font-family: "Nunito Sans", serif ;
+            display: grid;
+            justify-content: center;
+            background-color: #efefef;
+            a {text-decoration: none;
+             color: black;
+        }  
+    }
+    #contact{
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+    }
+    #linkedin{
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+
+    }
+    
+#layout {
+    width: 900px;
+    margin: 48px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+   
+    h3{
+        font-family:"Roboto", sans-serif ;
+        font-size: 30px;
+        color: #3C3744;
+    }
+    p{
+        font-family:"Nunito Sans", serif ;
+        font-size: 26px;
+    }
+    
+}
+.basic-grid-gallery {
+    /* background-image: linear-gradient(to right, red , blue); */
+    display: grid;
+    grid-template-columns: 900px;
+    
+    
+}
+
+
+.basic-grid-gallery img {
+    width: 100%;
+   
+}
+#brandcolors{
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+}
+
+
+#jewerlywebsite{
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+}
+.menu-button{
+    display: none;
+}
+        
+
+
+    
+   
+    
+ 
+
+/* NAV BAR RESPOSVISNESS */
+@media screen and (max-width: 400px){ 
+    .hideOnMobile{
+        display: none;
+
+    }
+    .menu-button{
+        display: block;
+    }
+   
+    .sidebar{
+        width: 100%;
+    }
+
+    }
+
+/* NAV BAR RESPOSVISNESS END */ 
+
+/* PHONE RESPONSINESS */
+
+
+@media screen and (max-width: 480px) {
+    nav li {
+        font-size: 13.5px;
+       
+
+    }
+    nav{
+        gap: 20px;
+    }
+    #logo{
+       width: 110px;
+    }
+
+    #maintitle {
+        flex-direction: column;
+        max-width: 390px;
+        padding: 15px;
+    }
+    #maintitle h1 {
+        font-size: 20px;
+    }
+    #maintitle p {
+        font-size: 18px;
+    }
+
+    #intro {
+        width: 100%;
+       
+    }
+
+    #projects {
+        font-size: 20px;
+    }
+    #section-container{
+        background: #efefef;
+    }
+
+    #main-content p {
+        font-size: 18px;
+    }
+    #main-content h1 {
+        font-size: 25px;
+        color: #0d111a;
+    }
+    #main-content h3 {
+        font-size: 20px;
+    }
+    #main h3 {
+        font-size: 20px;
+    }
+    
+    #main p {
+        font-size: 18px;
+    }
+    li{
+        font-size: 18px;
+    }
+    #maininfo{
+        width: 300px;
+    }
+
+    #mockup1 {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mockup1 img {
+        width: 100%;
+       
+    }
+    .design-process-container {
+        width: 350px;
+    
+    }
+    .design-process-container h3 {
+        font-size: 20px;
+        
+
+
+    }
+    .design-process-container p {
+        font-size: 18px;
+
+    }
+
+    .sideside {
+        justify-content: center;
+        flex-direction: column;
+        width: 390px;
+     }
+    
+      #contents {
+        width: 390px;
+       
+      }
+      #contents p {
+        font-size: 18px;
+      }
+     .mockups2 #contents img {
+        width: 100px;
+        background: #f9ece4;
+      }
+      .mockups2{
+        background: #efefef
+      }
+      #contents2 {
+        width: 330px;
+
+      }
+      #contents2 p {
+        font-size: 18px;
+      }
+     .mockups3 #contents2 img {
+        width: 110px;
+        background: #f9ece4;
+        align-items: center;
+        justify-content: center;
+      }
+      .mockups3{
+        background: #efefef
+      }
+      
+    
+
+    .image-container {
+        width: 100%;
+    }
+    .sideside2{
+       flex-direction: column;
+
+    }
+    .container2{
+        width: 390px;
+
+    }
+    .container2 p{
+        font-size: 18px;
+        
+    }
+    .container{
+        max-width: 390px;
+    }
+    .container p{
+        font-size: 18px;
+    }
+    .side-by-side5 {
+        justify-content: center;
+        flex-direction: column;
+        width: 300px;
+    }
+    .side-by-side5 p,.text-containe p {
+        font-size: 18px;
+    }
+    .side-by-side5 h3,.text-containe h3 , .text h3{
+        font-size:20px;
+    }
+.text p{
+    font-size: 18px;
+}
+    
+
+    .searchbar {
+        display: grid;
+        max-width: 390px;
+
+
+    }
+
+    
+    .media-text-container {
+       flex-direction: column;
+        max-width: 390px; 
+        align-items: center;
+        justify-content: center;
+        
+      }
+      #searchbars-img{
+        max-width: 400px;
+        width: 200px;
+       
+      }
+      .text-containe{
+        max-width: 390px;
+        width: 300px;
+        padding-top: 10px;
+      }
+      #searchbars-img img{
+        max-width: 250px;
+      }
+      
+      
+      .media{
+        max-width: 200px; 
+        width: 200px;
+        
+      }
+      video{
+        width: 200px;
+      }
+     .media video{
+        width: 200px;
+      }
+     
+      
+      /* Style for the text section */
+      .text {
+        max-width:300px; 
+    
+    
+      }
+     
+    
+    #layout {
+        max-width: 390px;
+       
+       
+
+        
+    }
+    #layout p{
+       font-size: 18px;
+
+        
+    }
+    #layout h3{
+        font-size: 20px;
+        
+ 
+         
+     }
+    .basic-grid-gallery {
+        display: grid;
+        grid-template-columns: 350px;
+        padding: 12px;
+        
+        
+    }
+    
+    
+    .basic-grid-gallery img {
+        width: 350px;
+       
+    }
+   
+#footer a, p{
+    font-size: 12px;
+}
+}
+
+    
+    
+    
+
+    
+

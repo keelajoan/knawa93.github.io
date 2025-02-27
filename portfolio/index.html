@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                </li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Work with me</a></li>
+            </ul>
+        
+            <ul>
+                <li><a href="index.html"id="logo"><img src="images/MyLogo_knawa.svg" alt="logo"></a>
+                </li>
+                <li  class="hideOnMobile"><a href="#">Resume</a></li>
+                <li class="hideOnMobile"><a href="#">Work with me</a></li>
+                <li  class="menu-button"   onclick=showSidebar()><a href="#"></menu><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        
+        </nav>
+       
+          
+        
+        <div id="maintitle">
+            <div id="intro">
+            
+                    <h1>Hello, i'm Keela</h1>
+                    
+                        <p> 
+                            I am a <b>Designer </b>with a diverse skill set, based in sunny Orlando, Florida.
+                            I enjoy UX/UI, Web development, and creativity.
+            
+                        </p>
+                    </div>
+                </div>
+                        
+                   
+              
+    
+            
+        <h1 id="projects">Projects</h1> 
+        
+        <div class="card-container contain">
+            
+            <div class="card1 card">
+                <img src="images/cardimg.png" alt= "app mockup">
+                <h3> UI</h3>
+                <a href="firstapp.html">F.I.R.S.T Student App  - Connecting Students</a>
+                
+                <p>
+                    Designing a Social App for Campus Collaboration
+                </p>
+            </div>
+        
+            <div class="card1   card">
+                <img src="images/websitelayout.png" alt= "app mockup">
+                <h3> UX UI</h3>
+                <a href="jewerlywebsite.html">Redesigning the Jewelry Shopping Experience</a>
+                <p>
+                How i Made Online Jewelry Browsing Elegant and Intuitive
+                </p>  
+            </div>
+       
+        </div>
+
+
+        <script>
+            function showSidebar() {
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'flex'
+            }
+            function hideSidebar() {
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'none'
+            }
+            
+
+            </script>
+            
+        <footer>
+            <div id="footer">
+                <a href="www.linkedin.com/in/keela-nawa" id="contact">Contact Me</a>
+                <a href="#" id="linkedin"> LinkedIn</a>
+
+            </div>
+           
+            
+        </footer>
+      
+        
+       
+
+       
+    
+
+        
+    </body>
+</html>
