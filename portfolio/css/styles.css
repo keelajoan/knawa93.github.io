@@ -19,7 +19,7 @@ body {
 /* header */
 nav{
     padding: 20px;
-    background-color: #F5F5F5;
+    background-color: #0d111a;
    
     
 }
@@ -42,7 +42,7 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
     font-family:"Roboto", sans-serif; ;
 }
 
@@ -110,11 +110,11 @@ nav a#logo:hover {
             margin:auto ;
             align-items: center;
             width: 100%;
-            padding: 20px;
+            padding: 60px;
             justify-content: center;
-            background-color:#f4f4f4;
+            background-color:#FF69B4;
             b{ 
-                color: #FF69B4 ;
+                color: #F5F5F5;
 
             }
 
@@ -148,10 +148,9 @@ nav a#logo:hover {
 
 #projects {
     text-align: center;
-    color:#f4f4f4;
+    color: black;
     /* background-color: #000000; */
     align-items: center;
-    background-color:#FF69B4;
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
@@ -160,7 +159,59 @@ nav a#logo:hover {
      border-radius: 15px;
     
 }
+.casestudies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#studentapp {
+    width: 80%;
+    max-width: 1200px;
+    width: 800px;
+    text-align: center;
+}
 
+#studentapp h1 {
+    font-size: 60px;
+    padding: 60px;
+    color: black;
+    margin-bottom: 60px;
+    font-family:"Roboto", sans-serif ;
+
+}
+
+#studentapp img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#studentapp h3 {
+    font-size: 24px;
+    color: black;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif ;
+}
+
+#studentapp a {
+    font-size: 1em;
+    color: #fff;
+    background-color: black;
+    padding: 10px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family:"Nunito Sans", serif ;
+
+}
+
+#studentapp a:hover {
+    background-color: #FF69B4;
+}
 
 .card-container {
     display: flex;
@@ -168,29 +219,54 @@ nav a#logo:hover {
     gap: 20px; /* Space between cards */
     flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
     padding: 20px;
+    padding-top: 50px;
     max-width: 1200px;
     margin: auto;
 }
+#hide {
+    opacity: 0; /* Initially hidden */ 
+    visibility: hidden; /* Prevents interaction */ 
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */ 
+    padding: 30px;
+    justify-content: baseline;
+    align-items: center;
+  }
+  .card:hover #hide{ 
+    opacity: 1; /* Show the text */ 
+    visibility: visible; /* Allows interaction */ 
+} 
+
+
+
 
 .card {
-    width: 500px;
-    height: 600px;
-    border: solid #FF69B4 4px;
+    width: 350px;
+    height: 500px;
+    border: solid  0.5px;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
     overflow: hidden; /* To ensure the image fits properly */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding:15px;
 }
 
+  
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    background-color: #FF69B4;
+    
+          
 }
 
 .card img {
@@ -201,7 +277,7 @@ nav a#logo:hover {
     transition: transform 0.3s ease; /* Smooth zoom effect on hover */
 }
 
-.card:hover img {
+.card:hover {
     transform: scale(1.05);
 }
 
@@ -215,15 +291,14 @@ nav a#logo:hover {
 .card a {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 24px;
-    color: #FF69B4;
+    color: black;
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
     margin-bottom: 10px;
 }
 
 .card a:hover {
-    color: #333;
-    transform: translateY(-3px); /* Lift effect on hover */
+
+    color: transparent;
 }
 
 .card p {
@@ -233,6 +308,7 @@ nav a#logo:hover {
     margin-top: 10px;
     padding-bottom: 20px;
 }
+
 
 
 
