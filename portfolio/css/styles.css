@@ -764,9 +764,13 @@ li {
   .searchbar {
     display: flex;             /* Enables flexbox layout */
     align-items: center;       /* Vertically aligns the items in the center */
-    justify-content: space-between; /* Distributes space evenly between the items */
-    gap: 20px;                 /* Adds space between the image container and text */
-    padding: 20px;             /* Optional: Adds padding around the container */
+    justify-content:center; /* Distributes space evenly between the items */
+    gap: 59px;                 /* Adds space between the image container and text */
+    padding: 20px; 
+    margin: auto;
+    max-width: 1200px;   
+    width: 1189px;  
+           /* Optional: Adds padding around the container */
     p {
         font-size: 28px; /* Standard font size for paragraphs */
         font-family:"Nunito Sans", serif ;
