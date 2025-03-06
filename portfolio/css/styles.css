@@ -159,60 +159,35 @@ nav a#logo:hover {
      border-radius: 15px;
     
 }
-.casestudies {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-#studentapp {
-    width: 80%;
-    max-width: 1200px;
-    width: 800px;
-    text-align: center;
-}
 
-#studentapp h1 {
-    font-size: 60px;
-    padding: 60px;
-    color: black;
-    margin-bottom: 60px;
-    font-family:"Roboto", sans-serif ;
 
-}
-
-#studentapp img {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-#studentapp h3 {
-    font-size: 24px;
-    color: black;
-    padding-bottom: 30px;
-    margin-bottom: 15px;
-    font-family: "Roboto", sans-serif ;
-}
-
-#studentapp a {
-    font-size: 1em;
-    color: #fff;
-    background-color: black;
-    padding: 10px 24px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-family:"Nunito Sans", serif ;
-
-}
-
-#studentapp a:hover {
+.button1{
+    display:grid ;
     background-color: #FF69B4;
+    padding: 15px 32px;
+    border-radius: 5px;
+    margin: 20px;
+    width:200px;
+    text-align: center;
+    text-decoration: none;
+    color: #0d111a;
+    font-size: 18px; /* Standard font size for paragraphs */
+    font-family:"Nunito Sans", serif ;
+      
 }
 
+
+.button1:hover {
+    background-color: black;
+    color: white;
+}
+
+.firstappmockup img {
+    width: 68%;  /* Makes the images take up 48% of the space */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
 .card-container {
     display: flex;
     justify-content: center;
@@ -468,7 +443,7 @@ li {
     
     
 }
-
+/* code for wireframes */
 .single {
     display: flex;
     flex-wrap: wrap;
@@ -500,106 +475,8 @@ li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
+/* code for wirframes */
 
-/* main colors code */
-.main2 {
-    padding: 30px;
-    
-    p {
-        font-size: 28px;
-        margin-bottom: 20px;
-        font-family:"Nunito Sans", serif ;
-    }
-    h3 {
-        font-size: 30px;
-        font-weight: 600;
-        margin-bottom: 10px;
-        font-family:"Roboto", sans-serif ;
-    }
-    
-    
-}
-
-.single2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-    margin-top: 20px;
-    max-width: 1200px;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-.container2{
-    flex: 1 1 60%;  /* Takes up 60% of the space */
-    padding: 50px;
-    
-}
-
-
-
-.sideside2 {
-    flex: 1 1 35%;  /* Takes up 35% of the space */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;  /* Aligns items horizontally */
-    gap: 20px;  /* Adds space between images */
-}
-
-.main2{
-    padding: 30px;
-    p {
-        font-size: 28px;
-        margin-bottom: 10px;
-        font-family:"Nunito Sans", serif ;
-    }
-    h3 {
-        font-size: 30px;
-        font-weight: 600;
-        margin-bottom: 10px;
-        font-family:"Roboto", sans-serif ;
-    }
-    
-    
-}
-
-.single2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    max-width: 1200px;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-.container2 {
-    flex: 1 1 60%;  /* Takes up 60% of the space */
-    padding: 50px;
-    
-}
-
-
-.sideside2 {
-    flex: 1 1 38%;  /* Takes up 35% of the space */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;  /* Aligns items horizontally */
-}
-.image-container2{
-    width:200px;
-}
-
-
-.image-container2 img {
-    width: 48%;  /* Makes the images take up 48% of the space */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-/* main colors code */
 
 /* DESIGN PROCESS CODE  */
 
@@ -668,6 +545,7 @@ li {
     justify-content: center; /* Horizontally centers the content */
     align-items: center; /* Vertically centers the content */
     max-width: 1200px;
+    width: 1100px;
     margin: auto;
     
   }
@@ -682,57 +560,40 @@ li {
     }
   }
 
-
-  #contents2 img {
-    max-width: 100%; /* Ensures the images are responsive */
-    margin: 10px; /* Adds space between images */
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust based on your preferred number of columns */
+    gap: 20px; /* Space between images */
+    margin-top: 20px; /* Optional: to add space above the grid */
   }
-  /* ICONS CODE */
-  #icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-   
-  }
-  
-  .single-column5 {
+    
+
+.image-grid img {
     width: 100%;
-    max-width: 1200px;
-    p {
-        font-size: 28px; /* Standard font size for paragraphs */
-        font-family:"Nunito Sans", serif ;
-        margin-bottom: 28px; /* Adds space between paragraphs */
-    }
-    h3 {
-        font-size: 30px; /* Larger font size for the heading */
-        margin-bottom: 15px; /* Adds space below the heading */
-        font-family: "Roboto", sans-serif ;
-    }           
-     /* Ensures it doesn't stretch too much */
-  }
+    height: auto;
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Optional: if you want rounded corners on images */
+}
+
   
-  .side-by-side5 {
-    display: flex;
-    /* justify-content: space-between; */
+  
+  .sidesideicons {
     flex-wrap: wrap; /* Allows the content to wrap on smaller screens */
     gap: 30px;
+    width: 400px;
+    max-width: 1200px;
   }
   
   /* Image container styling */
-  .image-container5 {
+  .image-containericons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    margin: auto;
     gap: 20px;
-    max-width: 800px; /* Adjust the size of the icons container */
+    max-width: 200px; /* Adjust the size of the icons container */
   }
   
-  .image-container5 img {
+  .image-containericons img {
     width: 40px;
     max-width: 200px; /* Ensures icons don't stretch too large */
     height: auto;
@@ -741,103 +602,12 @@ li {
   
   
   
-  /* Text container styling */
-  .text-container5 {
-    flex-basis: 75%;
-    max-width: 1200px;
-    padding: 10px;
-
-  }
   
-  .text-container5 h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  .text-container5 p {
-    font-size: 28px;
-    line-height: 1.6;
-    margin-bottom: 0;
-  }
-
-  .searchbar {
-    display: flex;             /* Enables flexbox layout */
-    align-items: center;       /* Vertically aligns the items in the center */
-    justify-content:center; /* Distributes space evenly between the items */
-    gap: 59px;                 /* Adds space between the image container and text */
-    padding: 20px; 
-    margin: auto;
-    max-width: 1200px;   
-    width: 1189px;  
-           /* Optional: Adds padding around the container */
-    p {
-        font-size: 28px; /* Standard font size for paragraphs */
-        font-family:"Nunito Sans", serif ;
-        margin-bottom: 28px; /* Adds space between paragraphs */
-    }
-    h3 {
-        font-size: 30px; /* Larger font size for the heading */
-        margin-bottom: 15px; /* Adds space below the heading */
-        font-family: "Roboto", sans-serif ;
-    }  
-     
-}
-
-#searchbars-img {
-    flex-direction: column;             /* Enables flexbox for the images */
-    gap: 10px;                 /* Adds space between the images */
-    max-width: 250px;
-    margin: auto;
-    padding: 12px;
-
-}
-
-#searchbars-img img {
-    
-    width: 230px;               /* Adjust the size of the images */
-    height: auto;              /* Keeps the aspect ratio of the images */
-   
-}
-
-.text-container4 {
-    max-width: 1200px;          /* Restrict the width of the text container */
-    width: 970px;
-
-}
-
-.text-container4 h3 {
-    margin: 0 0 10px 0;        /* Adds spacing below the heading */
-}
-
-.text-container4 p {
-    margin: 0;                 /* Removes default margin from the paragraph */
-    line-height: 1.6;          /* Improves readability of the text */
-}
-
 /* VIDEO CODE  */
 
-  .media-text-container {
-    display: flex; /* Enables flexbox layout */
-    align-items: center; /* Vertically aligns the items */
-    justify-content: space-between; /* Spreads out the media and text */
-    width:90%; /* Max width for the layout */
-    padding: 20px;
-    margin: auto;
-    h3{
-        font-family:"Roboto", sans-serif ;
-        font-size: 30px;
-    }
-    
-  }
-  
+
   /* Style for the media (image or video) */
-  .media {
-    max-width: 350px; /* Adjust this value to control size */
-    
-    
-    
-  }
+  
   .media video{
     width: 300px; /* Adjust this value to control size */
     height: auto;
@@ -845,29 +615,7 @@ li {
     
     
   }
-  
-  /* Style for the text section */
-  .text {
-   
-    max-width: 1200px;
-    width: 900px;
-    height: auto;
 
-  }
-
-
-  
-  .text h2 {
-    /* margin-bottom: 20px; */
-    font-size: 2rem;
-  }
-  
-  .text p {
-    font-size: 28px;
-    font-family:"Nunito Sans", serif ;
-  }
-  
-  
   
   
   /* ICONS CODE */
@@ -906,7 +654,6 @@ li {
 #layout {
     width: 900px;
     margin: 48px auto;
-    text-align: center;
     align-items: center;
     justify-content: center;
     gap: 30px;
@@ -934,11 +681,6 @@ li {
 .basic-grid-gallery img {
     width: 100%;
    
-}
-#brandcolors{
-    align-items: center;
-    justify-content: center;
-    width: 600px;
 }
 
 
@@ -985,8 +727,14 @@ li {
        
 
     }
+    .firstappmockup img{
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    max-width: 390px;
+    }
     .card:hover {
-        display: none;
+        display: block;
     }
     
     
@@ -997,13 +745,8 @@ li {
     }
     
     .card-container {
-        display: flex;
-        justify-content: center;
-        gap: 20px; /* Space between cards */
-        flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
-        padding: 20px;
-        padding-top: 0;
-        max-width: 600px;
+        max-width: 100%; 
+       
        
     }
     #hide {
@@ -1014,12 +757,8 @@ li {
         
       }
     .card {
-        width: 350px;
-        height: 300px;
-        border: solid  0.5px;
-        background-color:black;
-        transition: none;
-        padding:0;
+        width: 100%; /* Cards take full width on small screens */
+        height: auto; /* Adjust height to maintain aspect ratio */
     }
     nav{
         gap: 20px;
@@ -1107,11 +846,8 @@ li {
         flex-direction: column;
         width: 390px;
      }
-    
-      #contents {
-        width: 390px;
-       
-      }
+     
+      
       #contents p {
         font-size: 18px;
       }
@@ -1122,15 +858,15 @@ li {
       .mockups2{
         background: #efefef
       }
-      #contents2 {
-        width: 330px;
-
-      }
+    
+      
+     
       #contents2 p {
         font-size: 18px;
       }
      .mockups3 #contents2 img {
-        width: 110px;
+        max-width: 390px;
+        width: 100px;
         background: #f9ece4;
         align-items: center;
         justify-content: center;
@@ -1142,24 +878,21 @@ li {
     
 
     .image-container {
-        width: 100%;
+        width: 200px;
+
     }
+    .image-containericons{
+        max-width: 200px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
     .sideside2{
        flex-direction: column;
 
     }
-    .container2{
-        width: 390px;
-
-    }
-    .container2 p{
-        font-size: 18px;
-        
-    }
-    .container2 h3{
-        font-size: 18px;
-        
-    }
+    
     .container{
         max-width: 390px;
     }
@@ -1169,37 +902,11 @@ li {
     .container h3{
         font-size: 18px;
     }
-    .side-by-side5 {
-        justify-content: center;
-        flex-direction: column;
-        width: 300px;
-    }
-    .side-by-side5 p,.text-containe p {
-        font-size: 18px;
-    }
-    .side-by-side5 h3,.text-containe h3 , .text h3{
-        font-size:20px;
-    }
+    
 .text p{
     font-size: 18px;
 }
     
-
-    .searchbar {
-        flex-direction: column;
-        max-width: 390px;
-        p{
-            font-size: 18px;
-        }
-        h3{
-            font-size: 20px;
-        }
-
-
-    }
-    #icons img{
-        width: 3/0px;
-    }
 
     
     .media-text-container {
@@ -1209,19 +916,7 @@ li {
         justify-content: center;
         
       }
-      #searchbars-img{
-        max-width: 390px;
-        width: 250px;
-       
-      }
-      .text-container4{
-        max-width: 390px;
-        width: 300px;
-        padding-top: 5px;
-      }
-      #searchbars-img img{
-        max-width: 200px;
-      }
+     
       
       
       .media{
@@ -1246,7 +941,8 @@ li {
      
     
     #layout {
-        max-width: 390px;
+        max-width: 350px;
+
        
        
 
