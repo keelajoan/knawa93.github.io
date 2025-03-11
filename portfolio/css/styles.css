@@ -558,11 +558,14 @@ li {
         font-family:"Nunito Sans", serif ;
         margin-bottom: 28px; /* Adds space between paragraphs */
     }
+   
   }
 
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust based on your preferred number of columns */
+    grid-template-columns: 1fr 1fr 1fr; /* Adjust based on your preferred number of columns */
+    width: 800px;
+    
     gap: 20px; /* Space between images */
     margin-top: 20px; /* Optional: to add space above the grid */
   }
@@ -826,6 +829,7 @@ li {
         width: 100%;
        
     }
+    
     .design-process-container {
         width: 350px;
     
@@ -845,36 +849,33 @@ li {
         justify-content: center;
         flex-direction: column;
         width: 390px;
-     }
      
-      
-      #contents p {
-        font-size: 18px;
-      }
-     .mockups2 #contents img {
-        width: 100px;
-        background: #f9ece4;
-      }
-      .mockups2{
-        background: #efefef
       }
     
-      
-     
+      .image-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Adjust based on your preferred number of columns */
+        width: 300px;
+       
+      }
+      .image-grid img {
+       
+        width: 90px;
+       
+      }
+
+      .mockups3 {
+        max-width: 400px;
+        width: 300px;
+        margin: auto;
+        
+      }
       #contents2 p {
         font-size: 18px;
       }
-     .mockups3 #contents2 img {
-        max-width: 390px;
-        width: 100px;
-        background: #f9ece4;
-        align-items: center;
-        justify-content: center;
+      #contents2{
+        width: 390px;
       }
-      .mockups3{
-        background: #efefef
-      }
-      
     
 
     .image-container {
@@ -977,7 +978,6 @@ li {
     font-size: 12px;
 }
 }
-
     
     
     
